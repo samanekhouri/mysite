@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from sahand.views import http_test,json_test 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-]
+    path('admin/',admin.site.urls)
+    #path ( 'url adress', 'view' )
+    path('http-test',http_test) ,
+    path('json-test',json_test) 
+    ]
+
