@@ -20,6 +20,7 @@ urlpatterns = [
      path ('admin/',admin.site.urls),
      # path( 'url adress' , ' view ' )
     path('',include('sahand.urls'))
+   
     
 ]
    
